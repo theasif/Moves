@@ -1,0 +1,1004 @@
+* {
+    margin: 0;
+    padding: 0;
+    html: smooth;
+    box-sizing: border-box;
+}
+/* ================= Top bar and media query style start hear ===================== */
+
+.top-bar {
+    background: #002551;
+    overflow: hidden;
+}
+.top-bar-contact {
+    display: flex;
+    gap: 2rem;
+}
+.top-bar-contact-phone {
+    display: flex;
+    gap: 5px;
+    alien-items: center;
+}
+.top-bar-contact p {
+    color: #fff;
+    margin-bottom: 0 !important;
+}
+.top-bar-contact-phone .fst {
+    color: white;
+    margin-top: 5px;
+}
+.top-bar-contact-email {
+    display: flex;
+    gap: 6px;
+    color: #fff;
+    font-weight: 400;
+}
+.top-bar-contact-email .fasi {
+    color: white;
+}
+.top-bar-right-content {
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+}
+.top-bar-right-content .registration {
+    color: #fff;
+    text-decoration: none;
+    background: #f46708;
+    padding: 20px 40px;
+}
+.input-style-one {
+    height: 40px;
+}
+.input-style-two {
+    height: 40px;
+}
+
+/* ================= Top bar and media query style end hear ===================== */
+
+/* ================= Navbar style start hear ===================== */
+
+.navbar-color {
+    background-color: #fff;
+    padding: 0;
+}
+.logo-size {
+    width: 60px;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+    margin-right: 40px;
+    color: #002551;
+    font-size: 14px;
+    font-weight: 600;
+}
+.collapse .navbar-nav .nav-item:last-child .nav-link {
+    margin-right: 0px;
+}
+
+.collapse .navbar-nav .nav-link:hover {
+    color: #f46708;
+    text-decoration: underline;
+}
+@media (max-width: 520px) {
+    .top-bar-right-content {
+        margin-top: 10px;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .top-bar-contact {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .top-bar-right-content .registration {
+        padding: 10px 20px;
+    }
+    .country-select {
+        background: #271306;
+        padding: 10px;
+        margin-top: 60px;
+    }
+    .buttons .play .play-i {
+        font-size: 10px;
+        color: red;
+        border: 2px solid #fff;
+        border-radius: 100px;
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+    }
+}
+/* ================= Navbar design end hear ===================== */
+
+/* ================= Banner design start hear ===================== */
+.s-test {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-img {
+    background-image: url("img/lf.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+}
+.bg-img::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(to left, transparent 0%, rgb(9, 31, 59) 100%);
+
+    top: 0;
+    left: 0;
+    opacity: 100%;
+}
+.country-select {
+    background: #db600e;
+    padding: 20px 50px 20px 50px;
+    margin-top: 100px;
+}
+.welcome-text .welcome h3 span {
+    color: #db600e;
+}
+.welcome-text .welcome h1 {
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+}
+.welcome-text .welcome h1:after {
+    content: "";
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 380px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+.welcome-text .welcome h4 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.welcome-text .welcome a {
+    background: #db600e;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.welcome-text .welcome a:hover {
+    background: #fff;
+    color: #db600e;
+}
+.country-select .btn-set {
+    margin-top: 40px;
+}
+.country-select .btn-set a {
+    background: #002551;
+    padding: 8px 60px 8px 60px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.country-select label {
+    color: white;
+}
+/* ================= Banner style end hear ===================== */
+
+/* ================= feature-area part style start hear ===================== */
+
+.de-padding {
+    padding: 28px 0;
+}
+.feature-desc .i-des {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #d85f0f;
+}
+.feature-area {
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+.feature-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: 1px solid transparent;
+}
+.feature-box:hover {
+    border: 1px solid #d85f0f;
+    transition: 0.5s;
+}
+.feature-box:hover .feature-desc i {
+    color: #002551;
+    transition: 0.5s;
+}
+.feature-box:hover .feature-desc .btn-design a {
+    background: #fcdbc4;
+    color: #db600e;
+    transition: 0.5s;
+}
+.feature-box .feature-desc h6 {
+    color: #002551;
+    font-weight: 700;
+}
+
+.feature-box .feature-desc p {
+    color: #002551;
+}
+
+.feature-box .feature-desc a {
+    color: #002551;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn-design a {
+    background-color: #979797;
+    padding: 3px 7px;
+    color: #002551;
+    font-weight: 500;
+    border-radius: 3px;
+}
+/* ================= feature-area part style end hear ===================== */
+/* ================= description part style start hear ===================== */
+.sizeing {
+    width: 100%;
+}
+.description {
+    overflow: hidden;
+}
+.description-right {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.education h2 {
+    color: #e66712;
+}
+.education p {
+    color: #002551;
+}
+.education a {
+    background-color: #002551;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.education a:hover {
+    background-color: #e66712;
+}
+/* ================= description part style end hear ===================== */
+/* ================= Video part style start hear ===================== */
+.search .fa-search {
+    position: absolute;
+
+    transform: translateY(-50%);
+    padding-right: 10px;
+    color: #35a6f2;
+    border-right: 1px solid #fff;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg {
+    width: 100%;
+}
+.banner {
+    z-index: 1;
+}
+.content::before {
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    z-index: -1;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #385477;
+    opacity: 0.7;
+}
+.content {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content .content-2 {
+    width: 60%;
+}
+
+.banner .content h2 {
+    color: white;
+}
+.banner .content h2 spen {
+    color: #ff7416;
+}
+.banner .content p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 10px 0 20px;
+}
+
+.buttons .play i {
+    font-size: 40px;
+    color: #da5f0e;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    padding: 20px;
+    height: 79px;
+    width: 79px;
+    cursor: pointer;
+}
+.buttons .play i:hover {
+    color: #fff;
+    transition: 0.5s;
+    border: 2px solid #da5f0e;
+}
+
+.trailor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+}
+.trailor.active {
+    visibility: visible;
+    opacity: 1;
+}
+.trailor video {
+    max-width: 900px;
+    outline: none;
+}
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+}
+@media (max-width: 991px) {
+    .header {
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+    .res-f-1 {
+        padding-left: 20px;
+    }
+    .three-footer {
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+    .map-bottom {
+        padding-left: 20px;
+    }
+    .content .content-2 {
+        width: 100%;
+    }
+    .navigation {
+        display: flex;
+
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+    .banner {
+        padding: 100px 50px;
+    }
+    .banner .play {
+        left: 50px;
+        font-size: 1em;
+    }
+    .play img {
+        margin-right: 10px;
+        max-width: 40px;
+    }
+    .trailor video {
+        max-width: 90%;
+        outline: none;
+    }
+}
+/* ================= Video part style end hear ===================== */
+/* ================= Country part style start hear ===================== */
+
+.country-select-bottom {
+    overflow: hidden;
+}
+.country-select-bottom h1 {
+    text-align: center;
+    color: black;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-top: 40px;
+    color: #f46708;
+}
+
+.country-select-bottom h1::after {
+    content: "";
+    background: #18212b;
+    display: block;
+    height: 1.5px;
+    width: 300px;
+    margin-top: 0px;
+    margin: 20px auto 5px;
+    margin-bottom: 40px;
+}
+.sm-flag img {
+    width: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.sm-flag a {
+    font-size: 17px;
+    font-weight: 600;
+}
+/* ================= Country part style end hear ===================== */
+
+/* ================= Empty part style start hear ===================== */
+.orenge {
+    overflow: hidden;
+}
+/* ================= Empty part style end hear ===================== */
+
+/* ================= video galary design start hear ===================== */
+
+.father-div {
+    overflow: hidden;
+}
+element.style {
+    width: 100%;
+}
+.video-g {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.video-g .bord {
+    border: 2px solid transparent;
+}
+.bord:hover {
+    border: 2px solid #f46708;
+    display: block;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.overlay a i {
+    color: #ff0000;
+    font-size: 40px;
+}
+
+.overlay.position-absolute {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-div.position-relative {
+    z-index: 1;
+}
+
+.video-g h1 {
+    color: #f46708;
+    text-align: center;
+}
+.video-g h1::after {
+    content: "";
+    background: #18212b;
+    display: block;
+    height: 1.5px;
+    width: 300px;
+    margin-top: 0px;
+    margin: 20px auto 5px;
+    margin-bottom: 40px;
+}
+/* ================= video galary style end hear ===================== */
+
+/* ================= our-services style start hear ===================== */
+
+.our-services {
+    background: #f8f8f8;
+    overflow: hidden !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.our-services .t-heading {
+    text-align: center;
+}
+.t-heading h2 {
+    font-width: 100;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.our-services .container {
+    padding: 70px 0px;
+}
+.services .items {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.services .items .survices-i-one .slogo {
+    font-size: 30px;
+    padding: 14px;
+    color: white;
+    border-radius: 100%;
+    background: #717cff;
+}
+.services .items .survices-i-tow .slogo {
+    font-size: 30px;
+    padding: 14px;
+    color: white;
+    border-radius: 100%;
+    background: #ff5959;
+}
+.services .items .survices-i-three .slogo {
+    font-size: 30px;
+    padding: 14px;
+    color: white;
+    border-radius: 100%;
+    background: #70ce88;
+}
+.services .items .survices-i-four .slogo {
+    font-size: 30px;
+    padding: 14px;
+    color: white;
+    border-radius: 100%;
+    background: #5c96ff;
+}
+.services .items .survices-i-five .slogo {
+    font-size: 30px;
+    padding: 14px;
+    color: white;
+    border-radius: 100%;
+    background: #fa706c;
+}
+.services .items h3 {
+    color: #37474f;
+    margin-top: 20px;
+}
+.services .items p {
+    color: #37474f;
+}
+.services .items a {
+    font-size: 17px;
+    color: #f46708;
+    font-weight: 700;
+}
+.services .items a i {
+    color: #37474f;
+    margin-left: 10px;
+}
+/* ================= our-services style end hear ===================== */
+/* =====================FEATURED UNIVERSITIES style start ===================== */
+.slide-heading {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.slider {
+    overflow: hidden;
+}
+.slider .slider-img {
+    padding: 10px;
+}
+.slider .slider-img img {
+    width: 100%;
+    height: 80px;
+}
+.slide-heading {
+    text-align: center;
+}
+.slider {
+    padding: 40px 0px;
+    background: #fafafa;
+}
+/* ================= FEATURED UNIVERSITIES style end========================= */
+
+/* ================= forme style start hear ===================== */
+.forms {
+    overflow: hidden !important;
+}
+.forms h4 {
+    color: #da6112;
+    text-decoration: underline;
+}
+.forms .d-left {
+    padding: 0px 40px 40px 40px;
+}
+.d-left {
+    border-right: 2px solid #a6a6a6;
+}
+.forms .container {
+    border-bottom: 2px solid #a6a6a6;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.mrg .form-label {
+    color: #a6a6a6;
+    margin-bottom: 0;
+}
+/*  */
+.d-right {
+    padding: 0px 40px 40px 40px;
+}
+.fa-facebook-f,
+.fa-instagram {
+    width: 52px;
+    padding-left: 13px !important;
+}
+
+.s-icon .fa-facebook-f {
+    background: #3e5c9a;
+}
+.s-icon .fa-twitter {
+    background: #29a9e1;
+}
+.s-icon .fa-instagram {
+    background: #d25965;
+}
+.s-icon .fa-linkedin-in {
+    background: #007ab9;
+}
+
+.s-icon {
+    display: flex;
+    gap: 50px;
+}
+.s-icon i {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 100%;
+    color: #fff;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    position: ceter;
+    position: relative;
+}
+.profile-pic .cam i {
+    padding: 15px;
+    background: #002551;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 254px;
+    margin-top: -46px;
+    font-size: 28px;
+    color: #fff;
+}
+.profile-pic p {
+    color: #acacac;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.pc {
+    color: #acacac;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.reset {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.reset a {
+    padding: 7px 50px;
+    border: 1px solid #f78d46;
+    border-radius: 4px;
+    color: #f78d46;
+    text-decoration: none;
+    font-weight: 600;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.reset a:hover {
+    background: #f78d46;
+    color: #fff;
+}
+.buttom-div {
+    overflow: hidden;
+}
+.buttom-div .row {
+    margin-left: 40px;
+}
+.buttom-div h5 {
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.buttom-div h5 span {
+    color: #f78d46;
+    font-weight: 700;
+}
+.check-gap {
+    margin-right: 40px;
+}
+.time-slot a {
+    border: 1px solid rgb(26, 23, 23);
+    padding: 8px 15px;
+    text-decoration: none;
+    color: rgb(26, 23, 23);
+    border-radius: 5px;
+    display: block;
+    transition: 0.5s;
+}
+.time-slot a:hover {
+    background: #b1b1b1;
+    border: 1px solid transparent;
+}
+.appointment {
+    margin-bottom: 40px;
+    overflow: hidden !important;
+}
+.appointment .container {
+    border-bottom: 2px solid #b1b1b1;
+    overflow: hidden;
+}
+.fgh {
+    margin-top: 20px;
+}
+.on-right #birthday {
+    padding: 5px 75px;
+}
+.f-size {
+    width: 400px;
+}
+
+.on-right h6 {
+    color: #f78d46;
+    text-align: center;
+    height: 100px;
+    background: #fef4ee;
+    padding-top: 40px;
+    border: 2px solid #f78d46;
+    border-radius: 5px;
+}
+
+.on-left h6 {
+    color: #b1b1b1;
+    text-align: center;
+    height: 100px;
+    background: #fff;
+    padding-top: 40px;
+    border: 2px solid #b1b1b1;
+    border-radius: 5px;
+}
+.appoin h3 {
+    text-align: center;
+    color: #f78d46;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+.appoin {
+    padding: 0px 20px 0px 20px;
+}
+/* ================= forme style end hear ===================== */
+/* ================= gallery.css start ===================== */
+/*-- ================ gallery title start ==================--*/
+.gallery-title {
+    background: #a8a8a8;
+    overflow: hidden;
+}
+.gallery-title h2 {
+    font-weight: 700;
+    padding: 20px 0px;
+    color: #f46708;
+}
+/*-- ================ gallery title start ==================--*/
+/*-- ================ gallery-image start ==================--*/
+.gallery-image {
+    position: relative;
+    margin-bottom: 30px;
+}
+.gallery-image .student-g img {
+    border: 1px solid #da6112;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.gallery-image .gallery-image-title {
+    position: absolute;
+    transition: 0.25s;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0px;
+    text-align: center;
+    border-radius: 5px;
+    background: #da62125b;
+}
+
+.gallery-image .gallery-image-title h5 {
+    font-size: 1em;
+    color: #fff;
+}
+
+.p-size {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    color: #fff;
+}
+.photo-gallery {
+    overflow: hidden;
+}
+.photo-gallery-title {
+    text-align: center;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+.photo-gallery-title h3 {
+    color: #18212b;
+}
+.photo-gallery-title h6 {
+    color: #da6112;
+}
+/*-- ================ gallery-image end ==================--*/
+/* ================= gallery.css end ===================== */
+/* ================= Footer style start hear ===================== */
+.footer {
+    background-color: #18212b !important;
+    overflow: hidden;
+}
+
+.footer .container {
+    padding: 40px 0px;
+    overflow: hidden;
+}
+.footer h3 {
+    color: #da6112;
+    margin-bottom: 40px;
+}
+.footer p {
+    color: #fff;
+    margin: 0;
+}
+.i-design {
+    color: #fff;
+    margin-top: 6px;
+    font-size: 15px;
+    padding: 10px;
+    background: #da6112;
+    border-radius: 100%;
+    text-align: right;
+}
+.p-design {
+    margin-bottom: 15px;
+}
+.three-footer h6 {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.three-footer .thg {
+    margin-bottom: 10px;
+}
+.three-footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bootom-ic a i {
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.map-size {
+    width: 100%;
+    max-height: 200px;
+}
+.map-border {
+    border: 2px solid #da6112;
+    display: block;
+    overflow: hidden;
+
+    height: 75%;
+    width: 100%;
+}
+.footer .col-1 i {
+    color: #f2f3f5;
+    margin-top: 27px;
+    font-size: 22px;
+}
+.footer .col-11 p {
+    margin-top: 20px;
+    font-size: 12px;
+}
+/* ================= Footer style end hear ===================== */
+/* ================= Footer bottom style start hear ===================== */
+
+.botton-copyright p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    align-items: center;
+}
+.botton-copyright p span {
+    font-weight: 700;
+}
+.bottom-navigation {
+    background: #000000;
+    padding-top: 1em;
+    display: block;
+    overflow: hidden;
+}
+.bottom-navigation-image {
+    float: right;
+    display: flex;
+}
+.bottom-navigation-image img {
+    height: 20px;
+    width: 40px;
+}
+/* ================= Footer bottom style end hear ===================== */
